@@ -11,8 +11,7 @@ using AspMvc5MultiTenantProject.Models;
 namespace AspMvc5MultiTenantProject.Controllers
 {
     public class Test1Controller : Controller
-    {
-		  // private ContextModel Entity = new ContextModel();
+    { 
 		  private BaseModel baseModel = new BaseModel();
 		  public ActionResult Index()
 		  {
