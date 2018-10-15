@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<h4 style="font-size:30px; color:forestgreen;		">  In the name of Allah, Most Gracious, Most Merciful        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم  </h4>
+<h5 style="font-size:21px; line-height:38px;">Welcome to Hamdoon Soft Fun: <br />Here I just use this ASP .Net MVC5 application as Multitenant application with single database per tenant    <br /> I am doing it from Windows 10 .<br />
+	 All code can be found here <a href="https://github.com/ashikcse20">https://github.com/ashikcse20</a> <br />
+	 </h5>
+	 <span style="line-height:25px;">
+ <b>  A. Technical Steps:</b> <br />
+   1.
+   Go to C:\Windows\System32\drivers\etc open hosts file with Sublime Text or Notepad with administarator mode. find # 127.0.0.1       localhost  and replace it by the following instruction.
+   <i>
+      <br />
+      #  In hosts file a line starting with # is a comment line
+      #The below  line is an active line which make many alias of local host (remove the #)
+      127.0.0.1       localhost hamdoonsoft.com  tenant1.hamdoonsoft.com tenant2.hamdoonsoft.com tenant3.hamdoonsoft.com
+   </i>
+   <br />
+   2. Then install IIS from Turn Windows Features On or Off<br />
+   3. From IIS Create a site and map your site to the physical publish folder of the project. <br />
+   4. Add Bindings from IIS for hamdoonsoft.com  tenant1.hamdoonsoft.com tenant2.hamdoonsoft.com tenant3.hamdoonsoft.com .<br /><br />
+   <b>B. Coding Steps: </b><br />
+   1. We need to make change in RouteConfig.Cs of App_Start folder to support multiple tenant.  Comment the default routeMap and Change  RouteConfig.Cs as shown in the video. I just follow steps from <a href="http://blog.gaxion.com/2017/05/how-to-implement-multi-tenancy-with.html">http://blog.gaxion.com/2017/05/how-to-implement-multi-tenancy-with.html</a> here for configuring route<br />
+   2. There are some simple tricks for selecting different database for different tenant. To see that download the code or see this tutorial patiently.
+</span>
+ 
+	  
+ 
+@*<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>*@

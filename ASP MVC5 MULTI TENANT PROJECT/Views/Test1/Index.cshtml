@@ -1,0 +1,17 @@
+﻿@model IEnumerable<AspMvc5MultiTenantProject.Models.TBL_TEST_1>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>
+   <ul>
+      <li>@Html.ActionLink("See Tenant Details", "TenantInfo", "test1")</li>
+      <li>@Html.ActionLink("See Table Data", "TableData", "test1")</li>
+      <li>@Html.ActionLink("Rdlc Report", "Report", "test1",new {id="pdf" }, null)</li>
+   </ul>
+</p>
+<p>
+     
+</p> 
