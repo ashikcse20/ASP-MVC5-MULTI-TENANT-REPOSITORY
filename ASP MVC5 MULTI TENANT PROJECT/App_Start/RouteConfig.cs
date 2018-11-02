@@ -28,7 +28,7 @@ namespace AspMvc5MultiTenantProject
 		  }
 	 }
 
-	 public class RoutingConstraint : IRouteConstraint
+	 public class RoutingConstraint : IRouteConstraint // It is main Class for Multi teanant
 	 { 
 
 		  public bool Match(HttpContextBase httpContext, Route route, string getParameter, RouteValueDictionary values, RouteDirection routeDirection)
@@ -67,7 +67,7 @@ namespace AspMvc5MultiTenantProject
 		  }
 	 }
 
-    public class RoutingConstraint2 : IRouteConstraint
+    public class RoutingConstraint2 : IRouteConstraint // it will work
     {
 
         public bool Match(HttpContextBase httpContext, Route route, string getParameter, RouteValueDictionary values, RouteDirection routeDirection)
@@ -77,4 +77,17 @@ namespace AspMvc5MultiTenantProject
             return true;
         }
     }
+    public class RoutingConstraint3 //itt will not work
+    {
+       public  RoutingConstraint3()
+        {
+            Match();
+        }
+        public bool Match( )
+        {
+            
+            return true;
+        }
+    }
+
 }
