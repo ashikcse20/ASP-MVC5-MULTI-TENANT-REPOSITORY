@@ -66,4 +66,15 @@ namespace AspMvc5MultiTenantProject
 				return true;
 		  }
 	 }
+
+    public class RoutingConstraint2 : IRouteConstraint
+    {
+
+        public bool Match(HttpContextBase httpContext, Route route, string getParameter, RouteValueDictionary values, RouteDirection routeDirection)
+        {
+            if (!values.ContainsKey("tenant2"))
+                values.Add("tenant2", "RoutingConstraint2 tenant");
+            return true;
+        }
+    }
 }

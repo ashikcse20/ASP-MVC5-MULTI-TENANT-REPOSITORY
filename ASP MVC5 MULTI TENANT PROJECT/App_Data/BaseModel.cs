@@ -5,12 +5,14 @@ namespace AspMvc5MultiTenantProject.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
     using Core;
+    using System.Configuration;
 
     public partial class BaseModel
     {
 
         public ContextModel Entity;
-        public string serverName = @"ASHIKPC\MSSQLSERVERASHIK"; 
+        //public string serverName = @"ASHIKPC\MSSQLSERVERASHIK"; 
+        public string serverName = ConfigurationManager.AppSettings["serverName"];
         public string databaseName = Constant.DatabaseName;
         public BaseModel()
         {
