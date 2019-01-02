@@ -220,11 +220,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Test2Controller.cs" />
     <Compile Include="Controllers\Test1Controller.cs" />
     <Compile Include="Core\Constant.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Library\EssentialClasses.cs" />
+    <Compile Include="Library\SqlConnection.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -319,6 +322,12 @@
       <DependentUpon>TESTDataSet.xsd</DependentUpon>
     </Content>
     <Content Include="Views\Test1\TableData.cshtml" />
+    <Content Include="Views\Test2\Create.cshtml" />
+    <Content Include="Views\Test2\Delete.cshtml" />
+    <Content Include="Views\Test2\Details.cshtml" />
+    <Content Include="Views\Test2\Edit.cshtml" />
+    <Content Include="Views\Test2\Index.cshtml" />
+    <Content Include="Views\Test2\TableData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppdataTest\" />
