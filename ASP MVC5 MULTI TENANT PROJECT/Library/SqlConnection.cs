@@ -117,7 +117,7 @@ namespace AspMvc5MultiTenantProject.Library
             finally
             {
                 con.Close();
-            }
+            }  
             return result;
         }
 
