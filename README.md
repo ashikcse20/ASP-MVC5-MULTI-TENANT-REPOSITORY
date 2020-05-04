@@ -1,7 +1,6 @@
 ### In the name of Allah, Most Gracious, Most Merciful بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم 
 Welcome to Hamdoon Soft Fun:
 This tutorial with video can be found in [ASP .NET MVC 5 Multi Tenant Example With New Project (Single Different Database For Per Tenant Using Entity Framework)](https://submitmysites.blogspot.com/2018/09/in-name-of-allah-most-gracious-most.html)
-## Provide me a popcorn packet with a cup of coffee: https://www.paypal.me/ashikcse20 
 Here I just use this ASP .Net MVC5 application as Multitenant application with single database per tenant
 I am doing it from Windows 10 .
 All code can be found here https://github.com/ashikcse20
@@ -16,7 +15,7 @@ All code can be found here https://github.com/ashikcse20
 1. We need to make change in RouteConfig.Cs of App_Start folder to support multiple tenant. Comment the default routeMap and Change RouteConfig.Cs as shown in the video. I just follow steps from http://blog.gaxion.com/2017/05/how-to-implement-multi-tenancy-with.html here for configuring route
 Add some code in App_Start/RouteConfig.cs
 
-
+#### Provide me a popcorn packet with a glass of fruit juice: https://www.paypal.me/ashikcse20 
 
 
 
