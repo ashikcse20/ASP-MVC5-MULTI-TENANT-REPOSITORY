@@ -100,7 +100,7 @@ Ok, fine let start I have devide the tutorual in two section Section A(Technical
 				return true;
 		   }
 	   }
-     </details>
+</details>
      
   3. There are some simple tricks for selecting different database for different tenant. To see that download the code and open App_Data/ BaseModel.cs. Here I have just make a dynamic connection string based on tenant name by variable 'Constant.DatabaseName' which was declared in Core/Constant.cs file and initialize  in App_Start/RouteConfig.cs at class: RoutingConstraint function: Match. For better understanding please see this video  [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?time_continue=784&v=e5Ic8qPfQV4) tutorial patiently. 
   
