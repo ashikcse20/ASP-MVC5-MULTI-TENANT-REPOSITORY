@@ -35,9 +35,9 @@ Ok, fine let start I have devide the tutorual in two section Section A(Technical
 **2** Then see the code in controller: test1  Action: TenantInfo . Also visit http://localhost:9780/test1/TenantInfo after running the project by ctrl + f5. You may got this error after running the project [Could not find a part of the path … bin\roslyn\csc.exe](https://stackoverflow.com/questions/32780315/could-not-find-a-part-of-the-path-bin-roslyn-csc-exe) then just uninstall and reinstall or update the version of **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** by NuGet Package Manager from References under Properties in solution explorer.
 ##### Keep in mind that from visual studio you can only run single tenant. To test multiple tenant described in section A you must have to host the published code in IIS server and set up the bindings.
 
-
+###### Added  code in App_Start/RouteConfig.csN.B: You don't need to add this code it is already added in RouteConfig.cs in this repository. I am just showing the code below.
 <details>
-	<summary>###### Added  code in App_Start/RouteConfig.csN.B: You don't need to add this code it is already added in RouteConfig.cs in this repository. I am just showing the code below.</summary>
+	<summary>Click to see the code</summary>
          
 	 
 	 
