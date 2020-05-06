@@ -1,6 +1,6 @@
 ### In the name of Allah, Most Gracious, Most Merciful بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم 
 Welcome to Hamdoon Soft Fun:
-## Contact: ashikcse20@gmail.com or skype ashikcse20 or facebook.com/ashikcse20 . Feel free to contact
+## If faced any problem to ruuning the code of this repository contact ashikcse20@gmail.com or skype ashikcse20 or www.facebook.com/ashikcse20 . Feel free to contact. 
 
 **At the starting of this written tutorial I am taking in mind that your familiar with C#, ASP .NET MVC,Folder Structure Of ASP .NET MVC, Routing, NuGet Package Manager, Publishing project in visual studio, IIS(Internet Information Services) managing like Application Pools, Bindings setting, SQL Server Management Studio (SSMS), SQL Data Base Server Or LocalDB, Creating ASP MVC Project with ADO Entity > Data Model Wizard > Code First From Databse . If you are not familiar these please acquire knowledge about these, that will help you a lot. ** 
 
