@@ -4,7 +4,7 @@ Welcome to Hamdoon Soft Fun:
 
 **At the starting of this written tutorial I am taking in mind that your familiar with C#, ASP .NET MVC,Folder Structure Of ASP .NET MVC, Routing, NuGet Package Manager, Publishing project in visual studio, IIS(Internet Information Services) managing like Application Pools, Bindings setting, SQL Server Management Studio (SSMS), SQL Data Base Server Or LocalDB, Creating ASP MVC Project with ADO Entity > Data Model Wizard > Code First From Databse . If you are not familiar these please acquire knowledge about these, that will help you a lot.** 
 
-This tutorial with video can be found in My Blog [ASP .NET MVC 5 Multi Tenant Example With New Project (Single Different Database For Per Tenant Using Entity Framework)](https://submitmysites.blogspot.com/2018/09/in-name-of-allah-most-gracious-most.html) OR directly in youtube [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?time_continue=784&v=e5Ic8qPfQV4). These are same video.
+This tutorial with video can be found in My Blog [ASP .NET MVC 5 Multi Tenant Example With New Project (Single Different Database For Per Tenant Using Entity Framework)](https://submitmysites.blogspot.com/2018/09/in-name-of-allah-most-gracious-most.html) OR directly in youtube [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?v=eHwyCdB6Dr8). These are same video.
 Here I just use this ASP .Net MVC5 application as Multitenant application with single database per tenant. Next time I will do the same thing with ASP .Net core.
 ## Required Environement
 1. I am doing it from Windows 10.
@@ -26,7 +26,7 @@ Ok, fine let start I have devide the tutorual in two section Section A(Technical
 3. From IIS Create a site. Right click on site name and click *Add Application* Map your site to the **Physical path** of the published folder of the project added in this repository.
 4. Add Bindings from IIS for hamdoonsoft.com tenant1.hamdoonsoft.com tenant2.hamdoonsoft.com tenant3.hamdoonsoft.com. 
 
-###### For better understanding of Section A please see this video from first to last [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?time_continue=784&v=e5Ic8qPfQV4) tutorial patiently
+###### For better understanding of Section A please see this video from first to last [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?v=eHwyCdB6Dr8) tutorial patiently
 
 ## Section B. Coding Steps: 
 ###### Fortunately after downloading this repository you don't have any coding task primarily. Just read the below information carefully.  
@@ -103,7 +103,7 @@ Ok, fine let start I have devide the tutorual in two section Section A(Technical
 	   }
 </details>
      
-  3. There are some simple tricks for selecting different database for different tenant. To see that download the code and open App_Data/ BaseModel.cs. Here I have just make a dynamic connection string based on tenant name by variable 'Constant.DatabaseName' which was declared in Core/Constant.cs file and initialize  in App_Start/RouteConfig.cs at class: RoutingConstraint function: Match. For better understanding please see this video  [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?time_continue=784&v=e5Ic8qPfQV4) tutorial patiently. 
+  3. There are some simple tricks for selecting different database for different tenant. To see that download the code and open App_Data/ BaseModel.cs. Here I have just make a dynamic connection string based on tenant name by variable 'Constant.DatabaseName' which was declared in Core/Constant.cs file and initialize  in App_Start/RouteConfig.cs at class: RoutingConstraint function: Match. For better understanding please see this video  [ASP .NET MVC 5 Multi Tenant Example With Basic Code (Single Database Per Tenant)](https://www.youtube.com/watch?v=eHwyCdB6Dr8) tutorial patiently. 
   
 And for making proper connection string add the bellow code serverName in Web.config (Not the Web.config file in View folder) file at section <appSettings>.
   
